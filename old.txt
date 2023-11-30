@@ -1,0 +1,77 @@
+        # -- minor widget for login layer
+        # self.m_widget = widgets.QWidget()
+        # self.m_widget.setFixedSize(200, 300)
+        # self.m_widget.setStyleSheet("background-color: #212A3E; border-radius: 10px;")
+                # -- logo label
+        # self.label = widgets.QLabel(self.m_widget)
+        # self.pixmap_l = gui.QPixmap('vista.png')
+        # self.label.setPixmap(self.pixmap_l)
+        # self.label.resize(75, 75)
+        # self.label.move(65, 15)
+        # util.fade_in(self.label, self.o_effect, self.animation)
+
+        # -- player name textinput
+        # self.textbox = widgets.QLineEdit(self.m_widget)
+        # self.textbox.setAttribute(core.Qt.WA_MacShowFocusRect, 0)
+        # self.textbox.setPlaceholderText("enter key...")
+        # self.textbox.move(28, 100)
+        # self.textbox.resize(150, 30)
+        # self.textbox.setStyleSheet('background-color: #F8F6F4; border-radius: 15px;')
+        # self.textbox.setAlignment(core.Qt.AlignHCenter)
+        # self.textbox.setGraphicsEffect(self.g_effect)
+        # self.textbox.installEventFilter(self)
+
+        self.login_button = widgets.QPushButton("data", self)
+        self.login_button.setFont(gui.QFont('Arial', 10))
+        self.login_button.setGeometry(50, 50, 75, 30)
+        self.login_button.move(90, 50)
+        self.login_button.setStyleSheet('background-color: #2B4865; border-radius: 2px; color: #E7F6F2')
+        self.login_button.installEventFilter(self)
+
+        self.login_button = widgets.QPushButton("model", self)
+        self.login_button.setFont(gui.QFont('Arial', 10))
+        self.login_button.setGeometry(50, 50, 75, 30)
+        self.login_button.move(90, 110)
+        self.login_button.setStyleSheet('background-color: #2B4865; border-radius: 2px; color: #E7F6F2')
+        self.login_button.installEventFilter(self)
+
+        self.login_button = widgets.QPushButton("resolve", self)
+        self.login_button.setFont(gui.QFont('Arial', 10))
+        self.login_button.setGeometry(50, 50, 75, 30)
+        self.login_button.move(90, 170)
+        self.login_button.setStyleSheet('background-color: #2B4865; border-radius: 2px; color: #E7F6F2')
+        self.login_button.installEventFilter(self)
+
+        self.login_button = widgets.QPushButton("analysis", self)
+        self.login_button.setFont(gui.QFont('Arial', 10))
+        self.login_button.setGeometry(50, 50, 75, 30)
+        self.login_button.move(90, 230)
+        self.login_button.setStyleSheet('background-color: #2B4865; border-radius: 2px; color: #E7F6F2')
+        self.login_button.installEventFilter(self)
+
+        self.login_button = widgets.QPushButton("import", self)
+        self.login_button.setFont(gui.QFont('Arial', 10))
+        self.login_button.setGeometry(50, 50, 75, 30)
+        self.login_button.move(90, 290)
+        self.login_button.setStyleSheet('background-color: #2B4865; border-radius: 2px; color: #E7F6F2')
+        self.login_button.installEventFilter(self)
+
+
+        #
+        # # -- register button
+        # self.register_button = widgets.QPushButton("Register", self.m_widget)
+        # self.register_button.setGeometry(50, 50, 125, 30)
+        # self.register_button.setFont(gui.QFont('Arial', 10))
+        # self.register_button.move(40, 195)
+        # self.register_button.setStyleSheet(
+        #     'background-color: qlineargradient(x1: 0, x2: 1, stop: 0 #4F4557, stop: 1 #6D5D6E); border-radius: 10px; color: white;')
+        # # self.register_button.clicked.connect(self.__check_details)
+        # self.register_button.installEventFilter(self)
+        #
+        # # -- discord button
+        # self.discord_button = widgets.QPushButton("", self.m_widget)
+        # self.discord_button.setGeometry(50, 50, 125, 30)
+        # self.discord_button.move(40, 235)
+        # self.discord_button.setStyleSheet('background-color: white; border-radius: 10px;')
+        # self.discord_button.clicked.connect(self.default_click)
+        # self.discord_button.installEventFilter(self)
